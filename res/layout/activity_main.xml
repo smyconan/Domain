@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:textSize="25sp" />
+     <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:ems="10"
+        android:textSize="25sp" />
+     <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
+        android:ems="10"
+        android:textSize="25sp" />
+
+     <Button
+         android:id="@+id/Minus"
+         android:layout_width="60dp"
+         android:layout_height="40dp"
+         android:layout_alignLeft="@+id/Add"
+         android:layout_below="@+id/Add"
+         android:layout_marginTop="36dp"
+         android:text="*"
+         android:onClick="Cheng"
+         android:textSize="25sp" />
+
+     <Button
+         android:id="@+id/op"
+         android:layout_width="60dp"
+         android:layout_height="40dp"
+         android:layout_alignLeft="@+id/Minus"
+         android:layout_below="@+id/Minus"
+         android:layout_marginTop="36dp"
+         android:text="-1"
+         android:onClick="Ni"
+         android:textSize="25sp" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/editText1"
+         android:layout_alignLeft="@+id/editText1"
+         android:layout_marginBottom="28dp"
+         android:text="Input a:" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editText2"
+         android:layout_below="@+id/editText1"
+         android:text="Input b:" />
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editText2"
+         android:layout_below="@+id/editText2"
+         android:text="Ans:" />
+
+     <Button
+         android:id="@+id/wanCheng"
+         android:layout_width="60dp"
+         android:layout_height="40dp"
+         android:layout_above="@+id/Minus"
+         android:layout_marginLeft="61dp"
+         android:layout_toRightOf="@+id/Add"
+         android:onClick="wanCheng"
+         android:text="W*"
+         android:textSize="25sp" />
+
+     <Button
+         android:id="@+id/button2"
+         android:layout_width="60dp"
+         android:layout_height="40dp"
+         android:layout_alignRight="@+id/wanCheng"
+         android:layout_alignTop="@+id/op"
+         android:onClick="NewAct"
+         android:text="Linear"
+         android:textSize="13sp" />
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/op"
+         android:layout_alignLeft="@+id/wanCheng"
+         android:layout_alignRight="@+id/wanCheng"
+         android:layout_alignTop="@+id/Minus"
+         android:onClick="wanNi"
+         android:text="W-1"
+         android:textSize="20sp" />
+
+     <Button
+         android:id="@+id/Add"
+         android:layout_width="60dp"
+         android:layout_height="40dp"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="21dp"
+         android:layout_toRightOf="@+id/textView2"
+         android:onClick="Add"
+         android:text="+,-"
+         android:textSize="25sp" />
+
+</RelativeLayout>
