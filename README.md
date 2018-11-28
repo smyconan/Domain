@@ -1,4 +1,6 @@
-Finite Field &Linear Analysis on Android(基于安卓平台的有限域演示及线性分析)
+Finite Field &Linear Analysis on Android
+======
+基于安卓平台的有限域演示及线性分析
 ======
 
 相关说明：  
